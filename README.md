@@ -5,3 +5,4 @@ O padrão de projeto FACADE é muito interessante e eficianete na nossas opiniã
 Alunos: João Vitor Adiers Xavier / Iran Matos Barbosa
 
 Instalação e execução: Apenas baixe o arquivo e rode tendo todas as dependecias padão do typescript
+Descomente a linha comentada no código para ver o outro lado da funcionalidade
