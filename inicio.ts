@@ -85,9 +85,17 @@ class Recepcao{
     }
 
     quartoPorHospede(nome:string){
+        
+    
         let pos= this.hospede.returnHospedes().indexOf(nome);
+        let room = this.quarto.returnQuartos()[pos];
 
-        console.log(`O hospede ${nome} está no quarto: ${this.quarto.returnQuartos()[pos]}`);
+        if(!room){
+            console.log(`Hóspede ${nome} não está hospedado aqui no momento\n`);
+            return;
+        }
+
+        console.log(`O(a) hóspede ${nome} está no quarto: ${room}\n`);
     }
 }
 
@@ -98,7 +106,15 @@ recepcao.mostrarOcupacoes();
 
 recepcao.quartoPorHospede("joao");
 
-recepcao.saidaHospede("joao", 43, "joao@gmail.com");
+//recepcao.saidaHospede("joao", 43, "joao@gmail.com");
 recepcao.mostrarOcupacoes();
+recepcao.entradaHospede("maria", 69, "maria@gmail.coom");
+recepcao.mostrarOcupacoes();
+
+
+
+recepcao.quartoPorHospede("joao");
+
+recepcao.quartoPorHospede("maria");
 
 
